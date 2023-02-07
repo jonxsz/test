@@ -1,0 +1,81 @@
+<?xml version="1.0" ?>
+<template xmlns="http://schemas.sulu.io/template/template"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
+
+  <key>event</key>
+
+  <view>pages/event</view>
+  <controller>Sulu\Bundle\WebsiteBundle\Controller\DefaultController::indexAction</controller>
+  <cacheLifetime>604800</cacheLifetime>
+
+  <meta>
+    <title lang="en">Event</title>
+    <title lang="nl">Evenement</title>
+  </meta>
+  <properties>
+    <section name="heading">
+    <meta>
+      <title lang="en">Heading</title>
+      <title lang="nl">Hoofding</title>
+    </meta>
+    <properties>
+      <property name="title" type="text_line" mandatory="true">
+        <meta>
+          <title lang="en">Title</title>
+          <title lang="nl">Titel</title>
+        </meta>
+        <params>
+          <param name="headline" value="true"/>
+        </params>
+        <tag name="sulu.rlp.part"/>
+      </property>
+      <property name="url" type="resource_locator" mandatory="true">
+        <meta>
+          <title lang="en">Resourcelocator</title>
+          <title lang="de">URL Locatie</title>
+        </meta>
+        <tag name="sulu.rlp"/>
+      </property>
+    </properties>
+  </section>
+  <section name="eventDetails">
+    <meta>
+      <title lang="en">Event details</title>
+      <title lang="nl">Evenement gegevens</title>
+    </meta>
+    <properties>
+      <property name="eventType" type="single_select">
+        <meta>
+          <title lang="en">Event type</title>
+          <title lang="nl">Soort evenement</title>
+        </meta>
+      </property>
+      <property name="startDate" type="date" colspan="6">
+        <meta>
+          <title lang="en">Start date</title>
+          <title lang="nl">Begindatum</title>
+        </meta>
+      </property>
+      <property name="endDate" type="date" colspan="6">
+        <meta>
+          <title lang="en">End date</title>
+          <title lang="nl">Einddatum</title>
+        </meta>
+      </property>
+      <property name="startTime" type="time" colspan="6">
+        <meta>
+          <title lang="en">Starting time</title>
+          <title lang="nl">Begintijd</title>
+        </meta>
+      </property>
+      <property name="endTime" type="time" colspan="6">
+        <meta>
+          <title lang="en">Ending time</title>
+          <title lang="nl">Eindtijd</title>
+        </meta>
+      </property>
+    </properties>
+  </section>
+  </properties>
+</template>
