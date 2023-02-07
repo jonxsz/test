@@ -51,13 +51,13 @@
           <title lang="nl">Soort evenement</title>
         </meta>
       </property>
-      <property name="startDate" type="date" colspan="6">
+      <property name="startDate" type="date" colspan="6" mandatory="true">
         <meta>
           <title lang="en">Start date</title>
           <title lang="nl">Begindatum</title>
         </meta>
       </property>
-      <property name="endDate" type="date" colspan="6">
+      <property name="endDate" type="date" colspan="6" mandatory="true">
         <meta>
           <title lang="en">End date</title>
           <title lang="nl">Einddatum</title>
